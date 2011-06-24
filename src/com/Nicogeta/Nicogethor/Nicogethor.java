@@ -23,7 +23,6 @@ public class Nicogethor extends JavaPlugin {
 	public void onEnable() {
 		PluginManager pm = getServer().getPluginManager();
 		pm.registerEvent(Event.Type.PLAYER_CHAT, playerListener, Priority.Normal, this);
-		pm.registerEvent(Event.Type.ENTITY_DAMAGE, playerListener, Priority.Normal, this);
 		setupPermissions();
 		log.info("Nicogethor ENABLE (by Nicogeta)");
 		log.info("Nicogethor ver 0.7");
